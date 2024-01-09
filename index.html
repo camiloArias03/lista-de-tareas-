@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lista de Tareas</title>
+</head>
+<body>
+    <div id="app">
+        <h1>Lista de Tareas camilo</h1>
+        <input type="text" id="taskInput" placeholder="Agregar nueva tarea">
+        <button onclick="addTask()">Agregar</button>
+        <ul id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- Agregar nuevos botones -->
+<button onclick="clearCompletedTasks()">Limpiar realizadas </button>
+<button onclick="markAllTasksCompleted()">Marcar Todas realizadas </button>
+<button onclick="markAllTasksIncomplete()">Desmarcar Todas realizadas</button>
+
+<!-- Agregar FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<!-- Utilizar iconos en botones -->
+<button onclick="addTask()"><i class="fas fa-plus"></i> Agregar</button>
+<button onclick="clearCompletedTasks()"><i class="fas fa-trash"></i> Limpiar Completadas</button>
+<!-- Agregar GSAP -->
+<script src="https://unpkg.com/gsap@3.9.2/all.js"></script>
